@@ -1,0 +1,1 @@
+The tip calculator receives an input in terms of the check along with the amount of people in the group. It then produces the suggested tip amount (15%, 20%, 25%) and equal spilt of the bill.
