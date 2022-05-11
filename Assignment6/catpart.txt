@@ -1,0 +1,67 @@
+﻿#Replace
+
+
+#Flag:
+        
+
+
+B: 
+-b.                [single]
+noB.
+
+
+F:         
+-f.                [single]
+        noF.
+R:        
+-r.                 [single]
+noL.
+V:        
+-v.                    [single]
+noV
+
+
+
+
+From: 
+Empty String. [property emptyInput]        [error]
+        String with Special Character.
+        Spaces.
+
+
+The Length of From String:
+           Not present.                      [error]      
+             1.
+        >1.                   
+            Greater than the input file(s).       [error] 
+
+
+
+
+Filename: s
+        Wrong Filename.                [property wrongFileName]        [error]
+        Multiple Filename.
+        Single Filename.			[single]
+
+
+File Present:
+         presence of special characters.    
+         presence spaces.                    
+         regular text.
+
+
+The Length of To String:
+            Not present.                             [property emptyTo]    
+        from Length.
+        <from Length
+        >from Length
+To:                                         
+        String with Special Character.        [if !emptyInput] [if !emptyTo]
+        String with Spaces.                        [if !emptyInput] [if !wrongFileName] [if !emptyTo]
+        Same as From.                [if !emptyInput] [if !wrongFileName] [if !emptyTo] 
+
+
+Contains of Pattern in File:
+              Empty.               [single]
+         One time. 1                      
+         Multiple Times.		
